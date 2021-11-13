@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
+import './App.css';
+// import Home from './components/Home';
 import BooksContainer from './components/BooksContainer';
 import Form from './components/Form';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div>
       <BooksContainer />
       <Form />
     </div>
