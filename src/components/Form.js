@@ -79,6 +79,10 @@ const Form = () => {
 
             <option>Fantasy</option>
             <option>Science Fiction</option>
+            <option>Education</option>
+            <option>Thriller</option>
+            <option>Horror</option>
+            <option>Classics</option>
 
           </select>
         </div>

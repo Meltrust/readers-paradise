@@ -21,7 +21,12 @@ const BooksContainer = () => {
       <ul className="list-unstyled row mx-0 g-0 gy-3">
         {booksList.map((book) => (
           <li key={book.id}>
-            <BookItem title={book.title} author={book.author} category={book.category} />
+            <BookItem
+              id={book.id}
+              title={book.title}
+              author={book.author}
+              category={book.category}
+            />
 
           </li>
         ))}
