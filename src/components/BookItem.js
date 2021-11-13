@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const BookItem = ({ title, author }) => (
   <div className="card pe-5">
-    <div className="row mx-0 py-4 justify-content-between align-items-center ps-4 pe-5 text-custom2">
+    <div className="row mx-0 py-4 justify-content-between align-items-center ps-4 pe-5">
       <div className="col-md-6">
         <p className="fw-bold opacity-50 mb-0">Fantasy</p>
         <p className="fw-bold robotoslab fs-2 mb-0">{title}</p>
@@ -31,7 +31,7 @@ const BookItem = ({ title, author }) => (
             <p className="fs-2 mb-0">
               38%
             </p>
-            <p className="text-custom3 opacity-50 small mb-2">Completed</p>
+            <p className="opacity-50 small mb-2">Completed</p>
           </div>
         </div>
       </div>

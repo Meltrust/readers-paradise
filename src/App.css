@@ -15,14 +15,10 @@ body {
 
 .line-h {
   height: 1px;
-  background-color: rgba(211, 211, 211, 0.529) !important;
+  background-color: rgba(211, 211, 211, 0.659) !important;
 }
 
 .line-v {
   width: 1px;
-  background-color: rgba(211, 211, 211, 0.529) !important;
-}
-
-.v-line2 {
-  border-right: 1px solid #6f3737 !important;
+  background-color: rgba(211, 211, 211, 0.659) !important;
 }
