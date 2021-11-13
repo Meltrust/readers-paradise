@@ -3,6 +3,7 @@
 > A React app to track your books collection.
 
 ![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot2.png)
 
 Mathix is a website for people who love reading and tracking a collection of books made with React, Redux, Twitter Bootstrap, HTML5 and CSS3.  It connects to an API to retreive and save the users' data and works on any device.
 
