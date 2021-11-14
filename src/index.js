@@ -14,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <div className="container min-vh-100">
+        <div className="container-fluid min-vh-100 bg-light">
           <Header />
           <Routes>
             <Route path="/" element={<App />} />

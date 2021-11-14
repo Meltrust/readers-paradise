@@ -1,10 +1,11 @@
 import { AiOutlineMenu } from 'react-icons/ai';
+import { FaUserCircle } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-  <header>
-    <nav className="navbar navbar-expand-md bg-white py-md-3 px-md-5 ">
-      <div className="container-fluid">
+  <header className="border-bottom py-2 bg-white mb-3 mb-md-5">
+    <nav className="navbar navbar-expand-md bg-white py-md-3 px-md-5 align-items-center justify-content-center ">
+      <div className="container">
         <span className="navbar-brand text-primary fw-bold fs-3 pe-md-3">Bookstore CMS</span>
         <button
           className="navbar-toggler"
@@ -17,8 +18,9 @@ const Header = () => (
         >
           <AiOutlineMenu style={{ fontSize: '25px' }} />
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul className="navbar-nav align-items-end line fw-light lh-1 position-relative nav-items-top">
+
             <li className="nav-item">
               <NavLink to="/" className="nav-link me-4 text-black-50">
                 BOOKS
@@ -29,7 +31,11 @@ const Header = () => (
                 CATEGORIES
               </NavLink>
             </li>
+
           </ul>
+          <div className="">
+            <FaUserCircle className="text-primary center-block" style={{ fontSize: '2.5rem' }} />
+          </div>
         </div>
       </div>
     </nav>

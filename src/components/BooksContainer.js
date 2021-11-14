@@ -13,7 +13,7 @@ const BooksContainer = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <div>
       <ul className="list-unstyled row mx-0 g-0 gy-3">
         {booksList.map((book) => (
           <li key={book.id}>
@@ -29,7 +29,7 @@ const BooksContainer = () => {
       </ul>
       <div className="line-h my-5" />
 
-    </>
+    </div>
   );
 };
 
