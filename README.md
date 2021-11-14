@@ -7,6 +7,10 @@
 
 Mathix is a website for people who love reading and tracking a collection of books made with React, Redux, Twitter Bootstrap, HTML5 and CSS3.  It connects to an API to retreive and save the users' data and works on any device.
 
+## Live demo
+
+https://meltrust.github.io/readers-paradise/
+
 
 ## Made with
 
