@@ -6,7 +6,7 @@ const Header = () => (
   <header className="border-bottom py-2 bg-white mb-3 mb-md-5">
     <nav className="navbar navbar-expand-md bg-white py-md-3 px-md-5 align-items-center justify-content-center ">
       <div className="container">
-        <span className="navbar-brand text-primary fw-bold fs-3 pe-md-3">Bookstore CMS</span>
+        <span className="navbar-brand text-primary fw-bold fs-3 pe-md-3">Reader&apos;s Paradise</span>
         <button
           className="navbar-toggler"
           type="button"
