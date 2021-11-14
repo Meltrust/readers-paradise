@@ -47,7 +47,7 @@ const Form = () => {
   };
 
   return (
-    <div className="pb-5 pb-md-0">
+    <div className="px-3 pt- pb-md-5 mb-md-5">
       <h2 className="h4 fw-bold text-muted"> ADD NEW BOOK</h2>
       <form className="row mx-0 g-0 justify-content-between pb-5 pb-md-0" id="">
         <div className="col-md-3">

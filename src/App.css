@@ -22,3 +22,7 @@ body {
   width: 1px;
   background-color: rgba(211, 211, 211, 0.659) !important;
 }
+
+.nav-items-top {
+  top: 0.15rem;
+}
