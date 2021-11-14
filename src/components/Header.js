@@ -22,12 +22,12 @@ const Header = () => (
           <ul className="navbar-nav align-items-end line fw-light lh-1 position-relative nav-items-top">
 
             <li className="nav-item">
-              <NavLink to="/" className="nav-link me-4 text-black-50">
+              <NavLink to="/" className="nav-link main-nav-links me-4 text-black-50">
                 BOOKS
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="categories" className="nav-link text-black-50 " exact>
+              <NavLink to="categories" className="nav-link  main-nav-links text-black-50 " exact>
                 CATEGORIES
               </NavLink>
             </li>
