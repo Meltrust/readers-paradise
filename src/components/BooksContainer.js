@@ -15,17 +15,24 @@ const BooksContainer = () => {
   return (
     <div>
       <ul className="list-unstyled row mx-0 g-0 gy-3">
-        {booksList.map((book) => (
-          <li key={book.id}>
-            <BookItem
-              id={book.id}
-              title={book.title}
-              author={book.author}
-              category={book.category}
-            />
+        {booksList.map((book) => {
+          const currentProgress = Math.floor(Math.random() * 10) + 1;
+          const bookLenght = Math.floor(Math.random() * 10 + currentProgress);
 
-          </li>
-        ))}
+          return (
+            <li key={book.id}>
+              <BookItem
+                id={book.id}
+                title={book.title}
+                author={book.author}
+                category={book.category}
+                currentProgress={currentProgress}
+                bookLenght={bookLenght}
+              />
+
+            </li>
+          );
+        })}
       </ul>
       <div className="line-h my-5" />
 

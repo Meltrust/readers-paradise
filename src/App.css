@@ -25,4 +25,23 @@ body {
 
 .nav-items-top {
   top: 0.15rem;
+  font-size: 0.95rem;
+}
+
+.text-1 {
+  font-size: 0.95rem;
+  font-family: 'Roboto Slab', sans-serif !important;
+  font-weight: 300;
+  color: #4386bf !important;
+}
+
+.text-category {
+  color: #121212;
+}
+
+.main-nav-links {
+  letter-spacing: 1.9px;
+  color: #121212;
+  font-size: 0.813rem;
+  font-family: 'Montserrat', sans-serif;
 }
