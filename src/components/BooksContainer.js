@@ -5,16 +5,6 @@ import BookItem from './BookItem';
 
 const BooksContainer = () => {
   const dispatch = useDispatch();
-  // const booksExamp = [
-
-  //   {
-  //     id: 'jfkd', title: 'The Da Vinci Code', author: 'Dan Brown', category: 'Thriller',
-  //   },
-  //   {
-  //     id: 'dkfjfkj', title: 'Pinocchio', author: 'Carlo Collodi', category: 'Fantasy',
-  //   },
-
-  // ];
 
   const booksList = useSelector((state) => state.booksReducer.books);
 
