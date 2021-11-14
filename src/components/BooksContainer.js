@@ -1,20 +1,26 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { loadBooks } from '../redux/books/books';
 import BookItem from './BookItem';
 
 const BooksContainer = () => {
-  const booksExamp = [
+  const dispatch = useDispatch();
+  // const booksExamp = [
 
-    {
-      id: 'jfkd', title: 'The Da Vinci Code', author: 'Dan Brown', category: 'Thriller',
-    },
-    {
-      id: 'dkfjfkj', title: 'Pinocchio', author: 'Carlo Collodi', category: 'Fantasy',
-    },
+  //   {
+  //     id: 'jfkd', title: 'The Da Vinci Code', author: 'Dan Brown', category: 'Thriller',
+  //   },
+  //   {
+  //     id: 'dkfjfkj', title: 'Pinocchio', author: 'Carlo Collodi', category: 'Fantasy',
+  //   },
 
-  ];
+  // ];
 
-  const booksList = [...booksExamp, ...useSelector((state) => state.booksReducer.books)];
+  const booksList = useSelector((state) => state.booksReducer.books);
+
+  useEffect(() => {
+    dispatch(loadBooks());
+  }, [dispatch]);
 
   return (
     <>
