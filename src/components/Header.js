@@ -1,5 +1,5 @@
 import { AiOutlineMenu } from 'react-icons/ai';
-import { FaUserCircle } from 'react-icons/fa';
+// import { FaUserCircle } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => (
@@ -33,9 +33,9 @@ const Header = () => (
             </li>
 
           </ul>
-          <div className="">
+          {/* <div className="">
             <FaUserCircle className="text-primary center-block" style={{ fontSize: '2.5rem' }} />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
