@@ -1,6 +1,7 @@
 {
   "homepage":"https://meltrust.github.io/readers-paradise",
   "name": "readers-paradise",
+  "homepage": "https://meltrust.github.io/readers-paradise/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

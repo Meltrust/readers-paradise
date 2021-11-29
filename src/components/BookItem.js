@@ -5,10 +5,10 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 const BookItem = ({
-  id, title, author, category, currentProgress, bookLenght,
+  id, title, author, category, currentProgress, bookLength, authorGoogleQuery,
 }) => {
   const dispatch = useDispatch();
-  const progressPercentage = Math.round((currentProgress / bookLenght) * 100);
+  const progressPercentage = Math.round((currentProgress / bookLength) * 100);
   const handleRemove = () => dispatch(removeBook(id));
 
   return (
@@ -17,21 +17,21 @@ const BookItem = ({
         <div className="col-md-6">
           <p className="fw-bold opacity-50 mb-0 text-category">{category}</p>
           <p className="fw-bold robotoslab fs-2 mb-0">{title}</p>
-          <button type="button" className="border-0 bg-white p-0 mb-3 text-1">
+          <a href={`https://www.google.com/search?q=${authorGoogleQuery}`} target="_blank" className="border-0 bg-white p-0 mb-3 text-1" rel="noreferrer">
             {author}
-          </button>
+          </a>
           <div className="row row-cols-auto mx-0 g-0">
-            <button type="button" className=" border-0 bg-white text-1">
+            {/* <button type="button" className=" border-0 bg-white text-1">
               Comments
-            </button>
+            </button> */}
             <div className="line-v px-0 mx-md-3 mx-1" />
             <button type="button" className=" border-0 bg-white text-1" onClick={handleRemove}>
               Remove
             </button>
             <div className="line-v px-0 mx-md-3 mx-1" />
-            <button type="button" className=" border-0 bg-white text-1">
+            {/* <button type="button" className=" border-0 bg-white text-1">
               Edit
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="col-md-3 d-flex flex-column justify-content-center">
@@ -55,8 +55,11 @@ const BookItem = ({
             {' '}
             {currentProgress}
           </p>
-          <button type="button" className="btn btn-primary px-3">
-            <span className="opacity-50 small">UPDATE PROGRESS</span>
+          <button
+            type="button"
+            className="btn btn-primary px-3"
+          >
+            <a href={`https://www.google.com/search?q=${authorGoogleQuery}`} target="_blank" className="opacity-50 small text-white" rel="noreferrer">VISIT AUTHOR</a>
           </button>
         </div>
       </div>
@@ -69,7 +72,8 @@ BookItem.propTypes = {
   id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   currentProgress: PropTypes.number.isRequired,
-  bookLenght: PropTypes.number.isRequired,
+  bookLength: PropTypes.number.isRequired,
+  authorGoogleQuery: PropTypes.string.isRequired,
 };
 
 export default BookItem;

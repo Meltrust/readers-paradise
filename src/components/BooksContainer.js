@@ -17,7 +17,8 @@ const BooksContainer = () => {
       <ul className="list-unstyled row mx-0 g-0 gy-3">
         {booksList.map((book) => {
           const currentProgress = Math.floor(Math.random() * 10) + 1;
-          const bookLenght = Math.floor(Math.random() * 10 + currentProgress);
+          const bookLength = Math.floor(Math.random() * 10 + currentProgress);
+          const authorGoogleQuery = book.author.split(' ').join('+');
 
           return (
             <li key={book.id}>
@@ -27,7 +28,8 @@ const BooksContainer = () => {
                 author={book.author}
                 category={book.category}
                 currentProgress={currentProgress}
-                bookLenght={bookLenght}
+                bookLength={bookLength}
+                authorGoogleQuery={authorGoogleQuery}
               />
 
             </li>
